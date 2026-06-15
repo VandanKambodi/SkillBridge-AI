@@ -187,6 +187,20 @@ npm run dev
 #### Open http://localhost:5173 to access the application.
 
 ## Screenshots
+- **Login page**
+  <img width="1364" height="638" alt="image" src="https://github.com/user-attachments/assets/d3506d7d-ec05-4aa6-ae4a-f24e1502a32b" />
+
+
+- **Landing Page**
+  <img width="1343" height="633" alt="image" src="https://github.com/user-attachments/assets/d8704135-43c4-44d3-8e27-506cf203f0d8" />
+
+  
+- **Reports Page**
+  <img width="1342" height="629" alt="image" src="https://github.com/user-attachments/assets/eb14acb4-b86c-4687-9164-9465ffb6fb24" />
+
+
+- **Interview Preparation Page**
+  <img width="1342" height="636" alt="image" src="https://github.com/user-attachments/assets/0d51ca2e-b9a6-4bbd-bd24-b6e73a44a8af" />
 
 
 
