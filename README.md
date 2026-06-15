@@ -1,4 +1,4 @@
-# ⚡ SkillBridge AI - AI-Powered Interview Preparation Platform
+# SkillBridge AI - AI-Powered Interview Preparation Platform
 
 A modern AI-powered career preparation platform that helps job seekers analyze resumes, evaluate job descriptions, identify skill gaps, generate interview questions, and create ATS-friendly resumes. Built with **React.js, Node.js, Express.js, MongoDB, Groq AI (LLaMA 3.3 70B), JWT Authentication, and SCSS**, SkillBridge AI provides an intelligent and personalized interview preparation experience.
 
@@ -11,61 +11,58 @@ A modern AI-powered career preparation platform that helps job seekers analyze r
 
 ---
 
-## 📖 Overview
+## Overview
 
 SkillBridge AI is an intelligent interview preparation platform designed to help candidates maximize their chances of landing their dream jobs. Users can upload their resumes and paste job descriptions to receive AI-generated insights, personalized preparation plans, interview questions, ATS-optimized resumes, and skill-gap analysis.
 
 The platform leverages **Groq's LLaMA 3.3 70B model** to deliver accurate and actionable career guidance within seconds.
 
----
+## Features
 
-## ✨ Features
-
-### 🎯 Resume & Job Analysis
+### Resume & Job Analysis
 
 * Upload resumes in PDF format
 * Analyze resumes against job descriptions
 * Calculate profile match percentage
 * Identify strengths and weaknesses
 
-### ❓ AI Interview Preparation
+### AI Interview Preparation
 
 * Generate role-specific interview questions
 * Receive detailed model answers
 * Prepare for technical and behavioral interviews
 * Improve confidence with personalized practice
 
-### 🔍 Skill Gap Analysis
+### Skill Gap Analysis
 
 * Detect missing skills and qualifications
 * Categorize gaps by severity
 * Recommend learning priorities
 * Provide actionable improvement suggestions
 
-### 🗺️ Personalized Roadmap
+### Personalized Roadmap
 
 * Generate customized preparation plans
 * Day-by-day learning recommendations
 * Structured study roadmap
 * Career-focused improvement tracking
 
-### 📄 ATS-Friendly Resume Generator
+### ATS-Friendly Resume Generator
 
 * Create AI-optimized resumes
 * Improve ATS compatibility
 * Download generated resumes as PDF
 * Tailor resumes for specific job roles
 
-### 🔐 Secure Authentication
+### Secure Authentication
 
 * JWT-based authentication
 * Protected routes
 * Secure user sessions
 * Token blacklist logout mechanism
 
----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -99,9 +96,8 @@ The platform leverages **Groq's LLaMA 3.3 70B model** to deliver accurate and ac
 * PDF Processing
 * Render Deployment
 
----
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 SkillBridge-AI
@@ -134,9 +130,8 @@ SkillBridge-AI
 └── README.md
 ```
 
----
 
-## 🚀 Installation
+## Installation
 
 ### Clone the Repository
 
@@ -168,7 +163,6 @@ Run Backend:
 npm run dev
 ```
 
----
 
 ### Frontend Setup
 
@@ -193,45 +187,11 @@ npm run dev
 
 #### Open http://localhost:5173 to access the application.
 
-## 📸 Screenshots
+## Screenshots
 
-### Landing Page
 
-<img src="YOUR_SCREENSHOT_LINK" alt="Landing Page" />
 
-### Resume Upload & Job Analysis
-
-<img src="YOUR_SCREENSHOT_LINK" alt="Resume Analysis" />
-
-### AI Interview Report
-
-<img src="YOUR_SCREENSHOT_LINK" alt="Interview Report" />
-
-### Skill Gap Analysis
-
-<img src="YOUR_SCREENSHOT_LINK" alt="Skill Gap Analysis" />
-
-### ATS Resume Generator
-
-<img src="YOUR_SCREENSHOT_LINK" alt="ATS Resume" />
-
----
-
-## 🌐 Live Demo
-
-### Frontend
-
-https://skillbridge-ai-1-ku8j.onrender.com
-
-### Backend API
-
-https://skillbridge-ai-lacn.onrender.com
-
-> Note: Hosted on Render free tier. Initial requests may take 30–60 seconds while the backend wakes up.
-
----
-
-## 🔑 API Endpoints
+## API Endpoints
 
 ### Authentication
 
@@ -250,9 +210,8 @@ https://skillbridge-ai-lacn.onrender.com
 | GET    | /api/interview/reports/:id | Fetch Single Report |
 | POST   | /api/interview/resume/:id  | Download ATS Resume |
 
----
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! To contribute:
 
@@ -276,13 +235,3 @@ git push origin feature-name
 ```
 
 5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-⭐ If you found this project useful, consider giving it a star on GitHub!
