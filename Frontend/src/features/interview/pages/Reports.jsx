@@ -66,7 +66,7 @@ const Reports = () => {
     <div className='reports-page'>
 
       {/* ── Header ── */}
-      <header className='reports-header'>
+      {/* <header className='reports-header'>
         <div className='reports-header__left'>
           <div className='nav-brand'>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
@@ -113,7 +113,56 @@ const Reports = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
+
+      <div className='home-topbar'>
+        <div className='home-topbar__left'>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          <span className='home-topbar__brand'>SkillBridge <strong>AI</strong></span>
+        </div>
+
+      <tr></tr>
+      <div className='reports-header__meta'>
+            <h2>My Reports</h2>
+            {reports?.length > 0 && (
+              <span className='reports-header__count'>
+                {reports.length} report{reports.length !== 1 ? 's' : ''}
+              </span>
+            )}
+          </div>        
+
+        <div className='home-topbar__right'>
+          <button
+            className='button primary-button reports-header__cta'
+            onClick={() => navigate('/')}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{marginRight:'0.5rem'}}>
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            New Report
+          </button>
+          <div className='home-topbar__divider'/>
+          <div className='home-topbar__user'>
+            <div className='home-topbar__avatar'>
+              {user?.name?.charAt(0)?.toUpperCase() || '?'}
+            </div>
+            <div className='home-topbar__user-info'>
+              <span className='home-topbar__user-name'>{user?.name || 'User'}</span>
+              <button className='home-topbar__logout' onClick={onLogout}>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                  <polyline points="16 17 21 12 16 7"/>
+                  <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className='reports-header__divider'/>
 

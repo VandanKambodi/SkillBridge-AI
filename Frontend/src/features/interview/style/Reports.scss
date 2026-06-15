@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2.5rem;
+  padding: 0.425rem 2.5rem;
   background: linear-gradient(180deg, #0d0f17, #0b0d13);
 
   &__left {
@@ -70,6 +70,133 @@
   &__divider {
     height: 1px;
     background: var(--border, rgba(255,255,255,0.07));
+  }
+}
+
+.home-topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 2rem;
+  background: rgba(11, 13, 20, 0.90);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  @supports not (backdrop-filter: blur(1px)) {
+    background: rgba(11, 13, 20, 0.97); // solid fallback for unsupported browsers
+  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__brand {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #eef0fa;
+
+    strong {
+      background: linear-gradient(120deg, #5b7fff, #c065ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.9rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: rgba(200, 210, 255, 0.70);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.80rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+
+    &:hover {
+      background: rgba(91, 127, 255, 0.10);
+      border-color: rgba(91, 127, 255, 0.30);
+      color: #fff;
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.35rem 0.75rem 0.35rem 0.35rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  &__avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5b7fff, #c065ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.08rem;
+  }
+
+  &__user-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #eef0fa;
+    line-height: 1;
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: 0.28rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68rem;
+    color: rgba(200, 210, 240, 0.45);
+    transition: color 0.15s;
+
+    &:hover { color: #f87171; }
   }
 }
 
